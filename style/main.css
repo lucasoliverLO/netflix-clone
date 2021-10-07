@@ -1,0 +1,210 @@
+:root { /* variáveis de cores */
+    --vermelho: #E50914;
+    --preto: #141414;
+    --dark: black;
+    --branco: #f4f6f8;
+}
+
+* { /* todo conteúdo da código / resetando valor padrão */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Elementos base */
+
+body {
+    background-color: var(--branco);
+    font-family: Verdana;
+    color: var(--preto);
+}
+
+header .container {
+    display: flex; /* alinhando elementos em tela à direita do logo */
+    flex-direction: row;
+    align-items: center; /* centralizando os elementos */
+    justify-content: space-between;
+}
+
+header .logo {
+    padding: 5px;
+    color: var(--vermelho);
+    font-family: 'Verdana','arial black';
+    font-size: 40px;
+    cursor: pointer;
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--preto);
+    margin-right: 10px;
+    transition: 0.3s ease all;
+    font-size: 16px;
+}
+
+header nav a:hover {  /* ação quando o cursor estiver em cima */
+    color: var(--vermelho);
+    font-size: 17px;
+    /* font-weight: bold; */
+}
+
+header nav .my-list {
+    font-weight: bold;
+    transition: .3s ease all;
+    margin-right: 20px;
+    padding-right: 10px;
+}
+
+header .my-list:hover {
+    font-size: 17px;
+}
+
+/* conteúdo principal */
+
+.main-content {
+    font-size: 16px;
+    background: linear-gradient(rgba(207, 204, 204, 0.5), 
+    rgba(148, 29, 29, 0.5)100%),
+    url('/img/squid-game-no-logo.jpg'); /* efeito sombreado flare */
+
+    height: 400px;
+    background-size: cover; /* limita o tamanho do background pela imagem */
+
+    display: flex; /* joga para a direita */
+    flex-direction: column; /* ajeita para baixo */
+    justify-content: center; /* centraliza */
+    align-items: flex-start; /* joga para o começo */
+}
+
+.main-content .description {
+    margin-bottom: 28px;
+    margin-top: 14px;
+    margin-right: 40%;
+    padding-left: 10px;
+    
+    text-align: left;
+    font-size: 14px;
+    color: var(--branco);
+}
+
+/* 
+.main-content .description:hover {
+    background-color: var(--branco);
+    background: rgba(255, 255, 255, 0.8);;
+    color: var(--vermelho);
+    font-weight: bold;
+    border-radius: 6px;
+}
+*/
+
+.main-content .title {
+    margin-top: 12%;
+    margin-bottom: 18px;
+    font-size: 34px;
+    font-family: verdana;
+    color: var(--branco);
+}
+
+/* ------------------- Testando botões -------------------*/
+/* .buttons {} ? */
+
+.button1 {
+    background-color: rgba(255, 246, 246, 0.856);
+    border: none;
+    color: var(--vermelho);
+    color: black;
+    
+    padding: 18px;
+    
+    margin-right: 3px;
+    margin-left: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    border-radius: 10px; /* Arredondar botão */
+    
+    font-weight: bold;
+
+    font-size: 13px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+
+}
+
+.button2 {
+    background-color: rgba(255, 246, 246, 0.856);
+    border: none;
+    color: black;
+    
+    padding: 18px;
+    margin-right: 3px;
+    margin-left: 6px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 10px;
+
+    font-weight: bold;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+
+}
+
+.button1:hover {
+    color: red;
+    font-size: 14px;
+    background-color: var(--branco)
+}
+
+.button2:hover {
+    color: red;
+    font-size: 15px;
+    background-color: var(--branco);
+}
+
+.button1 i {
+    margin-right: 8px;
+}
+
+.title i {
+    font-size: 18px;
+    cursor: pointer;
+    transition: .3 ease all;
+    margin-left: 6px;
+}
+
+.title i:hover {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.89)
+}
+
+/* ------------------------------------------------------ */
+
+.container {
+    margin-left: 20px;
+}
+
+.main-content .container {
+    width: 90%;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+    border-radius: 13px;
+    cursor: pointer;
+}
+
+.item img {
+    transition: 0.3s ease all;
+}
+
+.item img:hover {
+    opacity: 0.4;
+}
+
+.carrosel-filmes {
+    padding-top: 11px;
+    margin-bottom: 4px;
+}
